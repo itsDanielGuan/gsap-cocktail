@@ -14,6 +14,28 @@ const Cocktails = () => {
       }
     })
 
+    gsap.from(".popular",{
+      scrollTrigger:{
+        trigger:".popular",
+        start:"top center",
+      },
+      x:-300,
+      opacity:0,
+      duration:2,
+      ease:"expo.out"
+    })
+
+    gsap.from(".loved",{
+      scrollTrigger:{
+        trigger:".loved",
+        start:"top center",
+      },
+      x:300,
+      opacity:0,
+      duration:2,
+      ease:"expo.out"
+    })
+
     parallaxTimeline
     .from("#c-left-leaf",{
       x:-100, y:100
