@@ -13,7 +13,7 @@ const Cocktails = () => {
         scrub: true,
       }
     })
-
+    
     gsap.from(".popular",{
       scrollTrigger:{
         trigger:".popular",
